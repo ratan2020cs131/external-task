@@ -1,14 +1,21 @@
 import { NavLink } from 'react-router-dom'
-import React from 'react'
+import styles from './nav.module.css';
+import { Logo } from '../../asset/svg';
 
 const Nav = () => {
     return (
-        <div className='flex'>
-            <p className='text-xl'>Matrix AI Dashboard</p>
-            <div className='flex space-x-4'>
+        <div className={styles.container}>
+            <div className={styles.logodiv}>
+                <img src={Logo}></img>
+                <p className='text-xl'>Matrix AI Dashboard</p>
+            </div>
+            <div className={styles.linkdiv}>
                 <NavLink to="#" className='text-xl'>Setting</NavLink>
                 <NavLink to="#" className='text-xl'>Help</NavLink>
-                <NavLink to="#" className='text-xl'>Profile</NavLink>
+                <NavLink to="#" style={{display:'flex', gap:'8px'}}>
+                    <p className={styles.dp}>JL</p>
+                    Profile
+                </NavLink>
             </div>
         </div>
     )
