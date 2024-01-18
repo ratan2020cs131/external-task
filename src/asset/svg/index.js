@@ -18,9 +18,11 @@ import imag9 from "./imag9.svg";
 import imag10 from "./imag10.svg";
 import imag11 from "./imag11.svg";
 import imag12 from "./imag12.svg";
+import InfoIcon from './infoIcon.svg';
 
 export {
     Logo,
+    InfoIcon,
     GrpAvatar,
     GreenCheck,
     Unchecked,

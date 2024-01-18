@@ -2,9 +2,7 @@
     display: flex;
     width: 100%;
     gap: 15px;
-    align-items: flex-start;
-    width: 600px;
-    background-color: blue;
+    align-items: flex-end;
     justify-content: space-between;
 }
 
@@ -22,7 +20,9 @@
 .input {
     display: flex;
     gap: 20px;
-    align-items: center;
+    align-items: flex-start;
+    margin: 10px 0px;
+    justify-content: space-between;
 }
 
 .input h2 {
@@ -32,14 +32,18 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    width: 100px;
 }
 
 .input input,
-.input input:focus {
+.input textarea,
+.input input:focus,
+.input textarea:focus {
     fill: #FFF;
     stroke-width: 1px;
+    width: 224px;
     stroke: #959595;
-    border: 1px solid #C1C1C1;
+    border: 1px solid #959595;
     outline: none;
     font-family: Inter;
     font-size: 16px;
@@ -48,4 +52,20 @@
     line-height: normal;
     border-radius: 4px;
     padding: 8px 10px;
+}
+
+.info {
+    background-color: #E3E3E3;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px #07137F;
+    z-index: 0;
+    position: relative;
+}
+
+.info img {
+    position: absolute;
+    top: -15px;
+    left: -9px;
+    z-index: 1;
 }
