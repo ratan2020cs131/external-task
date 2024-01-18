@@ -7,12 +7,12 @@ const Nav = () => {
         <div className={styles.container}>
             <div className={styles.logodiv}>
                 <img src={Logo}></img>
-                <p className='text-xl'>Matrix AI Dashboard</p>
+                <p>Matrix AI Dashboard</p>
             </div>
             <div className={styles.linkdiv}>
-                <NavLink to="#" className='text-xl'>Setting</NavLink>
-                <NavLink to="#" className='text-xl'>Help</NavLink>
-                <NavLink to="#" style={{display:'flex', gap:'8px'}}>
+                <NavLink to="#">Settings</NavLink>
+                <NavLink to="#">Help</NavLink>
+                <NavLink to="#" style={{ display: 'flex', gap: '8px' }}>
                     <p className={styles.dp}>JL</p>
                     Profile
                 </NavLink>
