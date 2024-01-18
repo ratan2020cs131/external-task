@@ -1,17 +1,23 @@
 import React, { useState } from 'react'
 import Card from '../components/card1/Card';
+import Button from '../components/button1/Button';
+import Button2 from '../components/button2/Button';
 
 const Home = () => {
     const [selected, setSelected] = useState(0);
 
     return (
-        <div>
-            <div style={{display:'flex', flexDirection:'column', gap:'20px'}}>
-            {
-                cardData.map((item, index) => (
-                    <Card key={index} data={item} index={index} select={selected===index} setSelected={setSelected}/>
-                ))
-            }
+        <div style={{padding:'50px'}}>
+            <div style={{display:'flex', marginBottom:'40px', gap:'20px'}}>
+                <Button/>
+                <Button2/>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                {
+                    cardData.map((item, index) => (
+                        <Card key={index} data={item} index={index} select={selected === index} setSelected={setSelected} />
+                    ))
+                }
             </div>
         </div>
     )
