@@ -16,7 +16,8 @@ const Home = () => {
         <Button />
         <Button2 />
       </div>
-
+      
+      {selected===0?
       <div
         style={{
           display: "flex",
@@ -27,17 +28,20 @@ const Home = () => {
       >
         <Forum />
       </div>
-
+      :
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           marginBottom: "40px",
           gap: "20px",
+          width:'37vw',
         }}
       >
         <Status />
       </div>
+      }
+
 
       <div
         style={{
