@@ -12,7 +12,7 @@ import {
   imag10,
   imag11,
   imag12,
-} from "../Assets";
+} from "../asset/svg/index.js";
 import { CardC } from "./Card";
 export const Companies = () => {
   const data1 = [
