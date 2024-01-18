@@ -4,6 +4,7 @@ import Button from '../components/button1/Button';
 import Button2 from '../components/button2/Button';
 import Button3 from '../components/button3/Button';
 import Status from '../components/status/Status';
+import Forum from '../components/forum/Forum';
 
 const Home = () => {
     const [selected, setSelected] = useState(0);
@@ -13,6 +14,10 @@ const Home = () => {
             <div style={{display:'flex', marginBottom:'40px', gap:'20px'}}>
                 <Button/>
                 <Button2/>
+            </div>
+
+            <div style={{display:'flex',flexDirection:'column', marginBottom:'40px', gap:'20px'}}>
+                <Forum/>
             </div>
 
             <div style={{display:'flex',flexDirection:'column', marginBottom:'40px', gap:'20px'}}>

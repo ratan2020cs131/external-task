@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    width: 600px;
+}
+
+.heading {
+    color: #2B2579;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    gap: 10px;
+}
+
+.input {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.input h2 {
+    color: #111;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.input input,
+.input input:focus {
+    fill: #FFF;
+    stroke-width: 1px;
+    stroke: #959595;
+    border: 1px solid #C1C1C1;
+    outline: none;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 4px;
+    padding: 8px 10px;
+}
