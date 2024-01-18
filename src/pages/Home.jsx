@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Card from '../components/card1/Card';
 import Button from '../components/button1/Button';
 import Button2 from '../components/button2/Button';
+import Button3 from '../components/button3/Button';
 import Status from '../components/status/Status';
 
 const Home = () => {
@@ -18,12 +19,16 @@ const Home = () => {
                 <Status/>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginBottom:'40px' }}>
                 {
                     cardData.map((item, index) => (
                         <Card key={index} data={item} index={index} select={selected === index} setSelected={setSelected} />
                     ))
                 }
+            </div>
+
+            <div style={{display:'flex', marginBottom:'40px', gap:'20px'}}>
+                <Button3 text={'Add Selected to Forum'}/>
             </div>
         </div>
     )
