@@ -7,20 +7,18 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import data from "./data.js";
-import { tableArrow, crossArrow } from "../asset/svg";
-
+import { tableArrow, crossArrow } from "./../asset/svg/index.js";
 export const TableComponent = function BasicTable() {
   return (
     <TableContainer className="text-[1rem]">
-      <Table
-        aria-label="simple table"
-      >
+      <Table aria-label="simple table">
         <TableHead
           style={{
             backgroundColor: "rgba(59, 63, 159, 0.20)",
           }}
         >
           <TableRow>
+            <TableCell></TableCell>
             <TableCell>
               <h4 style={{ fontWeight: "700", color: "#07137F" }}>
                 Member Name
@@ -83,6 +81,16 @@ export const TableComponent = function BasicTable() {
                 borderBottom: "none",
               }}
             >
+              <TableCell>
+                <img
+                  src={crossArrow}
+                  className="p-1"
+                  style={{
+                    border: "1px solid red",
+                    borderRadius: "0.3125rem",
+                  }}
+                ></img>
+              </TableCell>
               <TableCell component="th" scope="row">
                 <h4
                   style={{
